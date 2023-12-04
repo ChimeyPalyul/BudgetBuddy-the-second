@@ -19,7 +19,7 @@ class Expenses(Resource):
             new_expense = ExpenseModel(
                 amount = data['amount'],
                 date = data['date'],
-                description = data['description']
+                description = data['description'],
                 frequency = data['frequency']
             )
             db.session.add(new_expense)
@@ -80,7 +80,7 @@ class Incomes(Resource):
             new_income = IncomeModel(
                 amount = data['amount'],
                 date = data['date'],
-                description = data['description']
+                description = data['description'],
                 frequency = data['frequency']
             )
             db.session.add(new_income)
